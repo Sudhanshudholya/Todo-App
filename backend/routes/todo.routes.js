@@ -1,7 +1,7 @@
 import express from "express"
 import { createTodo, deleteTodo, getAllTodos, getSingleTodo, updateTodo } from "../controllers/todo.controller.js"
 
-const router = express()
+const router = express.Router()
 
 router.post("/create-todo", createTodo)
 router.get("/get-all-todos", getAllTodos)
